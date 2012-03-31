@@ -2,6 +2,11 @@
 
 int my_array[50]; 
 
+int* init_array()
+{
+    return NULL;
+}
+
 void fillArray(int *array, int len)
 {
     int i;
@@ -30,7 +35,7 @@ void printArray(int *array, int len)
 
 int main()
 {
-    int *array = NULL;
+    int *array = init_array();
 
     fillArray(array, 50);
     squareArray(array, 50);
