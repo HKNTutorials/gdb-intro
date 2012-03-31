@@ -1,5 +1,5 @@
 CC = ~ece190/bin/clang
-all_execs = square_ints printargs arewethereyet string_modification
+all_execs = square_ints printargs arewethereyet string_modification fibonacci
 FLAGS = -g -Wall -Werror
 
 all : $(all_execs)
