@@ -9,14 +9,20 @@ int* init_array()
 
 void fillArray(int *array, int len)
 {
-    int i;
-    for (i = len-1; i >= 0; i--)
-        array[i] = i;
+    int* begin = array;
+    array += len-1;
+    for (int i = len-1; array >= begin; i--)
+    {
+        *array = i;
+        array--;
+    }
 }
 
 void squareArray(int *array, int len)
 {
     int i;
+
+    //square each element
     for (i = len; i > 0; i--)
         array[i] = array[1]*array[i];
 }
