@@ -1,10 +1,10 @@
 CC = gcc
-all_execs = square_ints printargs fibonacci floating_point
+all_execs = square_ints printargs fibonacci floating_point exp
 FLAGS = -g -Wall -Werror
 
 all : $(all_execs)
 
-% : %.c
+%: %.c
 	$(CC) $< $(FLAGS) -o $@
 
 clean:
