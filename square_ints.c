@@ -1,3 +1,4 @@
+// vim: ts=4:sw=4:et
 #include <stdio.h>
 
 int my_array[50]; 
@@ -9,9 +10,10 @@ int* init_array()
 
 void fillArray(int *array, int len)
 {
+    int i;
     int* begin = array;
     array += len-1;
-    for (int i = len-1; array >= begin; i--)
+    for (i = len-1; array >= begin; i--)
     {
         *array = i;
         array--;
