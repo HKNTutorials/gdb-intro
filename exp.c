@@ -1,11 +1,21 @@
 #include <stdio.h>
 #include <limits.h>
-// Computes the factorial of n, recursively.
+
+// Computes the factorial of n.
 int factorial(int n) {
+	int i;
+	int result;
+
 	if (n <= 1) {
 		return n;
 	}
-	return n * factorial(n - 1);
+	
+	for (i = 1; i <= n; i++)
+	{
+		result *= i;
+	}
+
+	return result;
 }
 
 // Computes exp(x), the exponential using the natural base e.
